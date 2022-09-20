@@ -1,37 +1,37 @@
-// kotlin í”„ë¡œê·¸ë¨ì˜ ì‹œì‘ì 
+// kotlin ÇÁ·Î±×·¥ÀÇ ½ÃÀÛÁ¡
 fun main() {
     // Input & Output
-    println("Hello Kotlin!!"); // ; ìƒëµ ê°€ëŠ¥
+    println("Hello Kotlin!!"); // ; »ı·« °¡´É
 
-    // ë³€ìˆ˜ì„ ì–¸
-    // variable ë³€ìˆ˜ëª…:type
-    // value ë³€ìˆ˜ëª…:type = ê°’ - Read Only ë³€ìˆ˜, ì„ ì–¸í•œ ê°’ ë³€ê²½ ë¶ˆê°€
+    // º¯¼ö¼±¾ğ
+    // variable º¯¼ö¸í:type
+    // value º¯¼ö¸í:type = °ª - Read Only º¯¼ö, ¼±¾ğÇÑ °ª º¯°æ ºÒ°¡
     var size:Int = 3
     println("Size : ${size * 2}")
 
-    // ì…ë ¥ë°›ê¸°
-    // readLine() ì…ë ¥ëœ ë°ì´í„°ë¥¼ ë¬¸ìì—´ë¡œ ë°˜í™˜
+    // ÀÔ·Â¹Ş±â
+    // readLine() ÀÔ·ÂµÈ µ¥ÀÌÅÍ¸¦ ¹®ÀÚ¿­·Î ¹İÈ¯
     var line:String? = readLine()
 
-    // !! NULLì´ ì—†ë‹¤ê³  í™•ì •
-    // ë¬¸ìì—´ì„ ì •ìˆ˜ë¡œ ë³€í™˜ í›„ sizeì— ëŒ€ì…
+    // !! NULLÀÌ ¾ø´Ù°í È®Á¤
+    // ¹®ÀÚ¿­À» Á¤¼ö·Î º¯È¯ ÈÄ size¿¡ ´ëÀÔ
     size = line!!.toInt()
     println("Size : ${size * 2}")
     var num:Double = readLine()!!.toDouble()
     println("Num : $num")
 
-    // `in` ì´ìœ ëŠ”? ì½”í‹€ë¦°ì— in ì˜ˆì•½ì–´ê°€ ìˆê¸° ë•Œë¬¸.
-    // scanì€ scanner ê°ì²´
+    // `in` ÀÌÀ¯´Â? ÄÚÆ²¸°¿¡ in ¿¹¾à¾î°¡ ÀÖ±â ¶§¹®.
+    // scanÀº scanner °´Ã¼
    var scn = Scanner(System.`in`)
     num = scn.nexDouble()
     println("scn Num : $num")
 
-    // ì½”í‹€ë¦° ë³€ìˆ˜ ì„ ì–¸
+    // ÄÚÆ²¸° º¯¼ö ¼±¾ğ
     var a:Short = 4
     var b:Short
     var c = 4
 
-    val d:Float = 3.5f // ê°’ì„ ë³€ê²½í•  ìˆ˜ ì—†ëŠ” ë³€ìˆ˜ ì„ ì–¸
+    val d:Float = 3.5f // °ªÀ» º¯°æÇÒ ¼ö ¾ø´Â º¯¼ö ¼±¾ğ
     val e = 4.9
     val f:Double
     f = 4.9
